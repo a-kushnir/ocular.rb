@@ -11,7 +11,7 @@ module Scrutinizer
         result.files.each do |file|
           files << {
             :name => file.filename,
-            :lines => file.coverage
+            :lines => file.coverage_data['lines']
           }
         end
 
